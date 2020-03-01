@@ -1,3 +1,23 @@
-body {
-	background-color: #cff;
+html,
+body,
+header,
+#intro {
+	height: 100%;
+}
+
+#intro {
+	background: url(/img/jcb_ex.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.top-nav-collapse {
+	background-color: #24355c;
+}
+
+/* должно склывать цвет навигации при верху страницы */
+@media (max-width: 768px) {
+	.navbar:not(.top-nav-collapse) {
+		background: #24355c;
+	}
 }
